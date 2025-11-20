@@ -5,6 +5,7 @@ import Marines from "./components/Marines";
 import Pirates from "./components/Pirates";
 import CrewDetail from "./components/CrewDetail";
 import Events from "./components/Events";
+import Admin from "./components/Admin";
 
 function Layout({ children }){
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/pirates" element={<Pirates />} />
           <Route path="/pirates/:crewId" element={<CrewDetail />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Layout>
     </BrowserRouter>
